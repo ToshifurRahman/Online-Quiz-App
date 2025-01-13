@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .wrong {
+        @apply text-lg border bg-red-700 hover:bg-red-400 text-white font-semibold pl-2 py-2;
+    }
+    .correct {
+        @apply text-lg border bg-green-700 hover:bg-green-500 text-white font-semibold pl-2 py-2;
+    }
+    .select {
+        @apply text-lg  border-[3px] bg-yellow-400 border-yellow-500 active:bg-slate-900   font-semibold pl-2 py-2;
+    }
+    .defaults {
+        @apply text-lg border-[3px] bg-slate-200 cursor-pointer font-mono  hover:bg-gray-600 hover:text-white active:bg-slate-900 py-2  font-semibold pl-2;
+    }
+    .mediaInput {
+        @apply  block w-full text-sm text-gray-500
+        file:me-4 file:py-2 file:px-4
+        file:rounded-lg file:border-0
+        file:text-sm file:font-semibold
+        file:bg-[#32012F] file:text-white
+        hover:file:bg-blue-700
+        file:disabled:opacity-50 file:disabled:pointer-events-none
+        dark:text-neutral-500
+        dark:file:bg-blue-500
+        dark:hover:file:bg-blue-400
+    }
+}
+.bg-radial {
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px);
+  }
+  
+  .bg-repeat {
+    background-image: repeating-linear-gradient(#7c7d8655, #7c7d86);
+  }
+  
